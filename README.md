@@ -1,11 +1,29 @@
-# SAT Recruitment
+# Description
+Application to control user management through a REST API.
 
-El objetivo de esta prueba es refactorizar el código de este proyecto.
-Se puede realizar cualquier cambio que considere necesario en el código y en los test.
+The functionalities exposed in the API are as follows
+- Register a new user in the system.
 
+Users are persisted in a .txt file.
 
-## Requisitos 
+A swagger has also been added to make it easier to expose the API for testing.
 
-- Todos los test deben pasar.
-- El código debe seguir los principios de la programación orientada a objetos (SOLID, DRY, etc...).
-- El código resultante debe ser mantenible y extensible.
+# Requirements
+- Visual Studio 2019
+- Swagger
+- .net MVC Web Api
+
+# Testing
+Unit tests have been provided. 
+
+To access the swagger api, just go to the following endpoint:
+https://localhost:44353/swagger/index.html
+
+# Improvements
+Due to lack of time, some functionalities that would be considered essential in a real application have been left unimplemented:
+
+- Add more tests.
+- Include authorisation and access control.
+- Secure access to the api.
+- Save data in memory to traverse the file as few times as possible.
+- Adding the other endpoints necessary for user management
